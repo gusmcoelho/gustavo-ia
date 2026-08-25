@@ -1,0 +1,25 @@
+﻿# Python & Environment
+venv/
+.venv/
+__pycache__/
+*.py[cod]
+*.class
+.env
+*.env.*
+!.env.example
+
+# Local Session & Credentials (NEVER COMMIT)
+session/
+session.json
+*.session
+
+# Local Scripts
+*.bat
+*.cmd
+
+# IDEs & System files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+*.log
