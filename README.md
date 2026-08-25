@@ -8,13 +8,25 @@ Chatbot interativo desenvolvido para operar de forma 100% gratuita, sem necessid
 
 ---
 
+## Como Funciona
+
+A aplicação é estruturada de forma simples em duas partes:
+
+1. **Frontend (Este Repositório Público):**
+   Contém a interface visual do chatbot (HTML, CSS e JavaScript) hospedada gratuitamente no **GitHub Pages**. Ele cuida de enviar as mensagens do usuário e renderizar o texto em tempo real com Markdown e realce de código.
+
+2. **Backend (Repositório Privado):**
+   O processamento e a comunicação com o modelo de IA rodam através de uma API em **Python (FastAPI)** hospedada na nuvem no **Render** em um repositório privado, mantendo as configurações e a infraestrutura do servidor protegidas.
+
+---
+
 ## Sobre o Projeto
 
-O GustavoIA é uma aplicação web conversacional construída para oferecer uma interface moderna e rápida para interação com inteligência artificial. O projeto foi projetado com foco em custo zero de infraestrutura e operação:
+O GustavoIA é uma aplicação web conversacional construída para oferecer uma interface moderna e rápida para interação com inteligência artificial com foco em custo zero:
 
-- **100% Gratuito:** Não depende de créditos, planos pagos ou chaves de API comerciais.
-- **Sem Processamento Local:** Não exige execução de modelos pesados no hardware do usuário (dispensando uso de GPU ou alto consumo de memória RAM).
-- **Arquitetura em Nuvem:** Interface estática hospedada via GitHub Pages conectada a um serviço backend assíncrono em FastAPI hospedado no Render.
+- **100% Gratuito:** Não depende de planos pagos ou créditos de API comerciais.
+- **Sem Processamento Local:** Não consome hardware do usuário (dispensando uso de GPU ou alto consumo de memória RAM).
+- **Arquitetura em Nuvem:** Interface estática no GitHub Pages conectada a um serviço backend assíncrono no Render.
 
 ---
 
@@ -25,14 +37,6 @@ O GustavoIA é uma aplicação web conversacional construída para oferecer uma 
 - **Realce de Sintaxe:** Destaque de código com identificação automática de linguagens de programação via Highlight.js.
 - **Histórico no Navegador:** Persistência local de sessões e chats utilizando a Web Storage API (localStorage).
 - **Design Responsivo:** Interface adaptada para navegação em dispositivos móveis e desktop.
-
----
-
-## Arquitetura e Tecnologias
-
-- **Frontend:** HTML5, CSS3 estruturado com variáveis de tema e JavaScript (ES6+).
-- **Backend:** Python e FastAPI para roteamento assíncrono e controle de requisições.
-- **Hospedagem & CI/CD:** GitHub Pages (distribuição estática), Render (serviço web) e GitHub Actions (rotina de disponibilidade).
 
 ---
 
