@@ -1204,7 +1204,7 @@
         }
 
       } catch (err) {
-        fullResponse = `❌ **Erro ao conectar com o GustavoIA:**\n\n${err.message}\n\n*Certifique-se de que o servidor está rodando em http://localhost:8000.*`;
+        fullResponse = `**Erro ao conectar com o GustavoIA:**\n\n${err.message}\n\n*Verifique sua conexão ou tente novamente em instantes.*`;
         bubble.innerHTML = formatMessageContent(fullResponse);
       } finally {
         bubble.classList.remove('typing-cursor');
